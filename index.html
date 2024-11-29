@@ -11,7 +11,7 @@
     <p>Your IP address has been provided via the Cloudflare Worker at <a href="https://getip-worker.fabcloud.co.za" target="_blank">https://get-ip.admin3429.workers.dev</a></p>
 
     <script>
-        fetch('https://get-ip.admin3429.workers.dev/')
+        fetch('https://getip-worker.fabcloud.co.za')
             .then(response => response.json())
             .then(data => {
                 document.getElementById('ip-address').textContent = data.ip;
